@@ -490,7 +490,7 @@
   bottom: 0;
   right: 0;
   height: 4px;
-  background: var(--thm-primary);
+  background: var(--thm-third-pink);
   border-radius: 5px 5px 0px 0px;
   -webkit-transition: -webkit-transform 700ms ease;
   transition: -webkit-transform 700ms ease;
@@ -605,7 +605,7 @@
 
 .navbar-wrap ul li .sub-menu li a:hover {
   color: var(--thm-white);
-  background: var(--thm-teal);
+  background: var(--thm-secondary-pink);
 }
 
 /*=============================
@@ -696,7 +696,7 @@
 }
 .main-header-two .header-contact-info ul li p a:hover,
 .main-header-two .header-social-links ul li a:hover {
-  color: var(--thm-teal);
+  color: var(--thm-secondary-pink);
 }
 .main-header-two .main-header-one__bottom {
   background: var(--thm-blue);
