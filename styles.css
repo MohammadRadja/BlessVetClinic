@@ -1017,6 +1017,7 @@ label {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .about-sec .sec-images {
   position: relative;
 }
