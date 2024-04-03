@@ -247,6 +247,10 @@ h6 {
 
 .br-style1 {
   position: relative;
+  top: 3rem;
+  width: 35rem;
+  height: 35rem;
+  z-index: -1;
   border-radius: 0px 180px 0px 200px;
 }
 .br-style1::before {
@@ -1027,6 +1031,7 @@ label {
 }
 .about-sec .sec-images .sec-img-one img {
   width: 100%;
+  height: auto;
 }
 .about-sec .sec-images .sec-img-one::after {
   content: "\f120";
@@ -1291,6 +1296,7 @@ rect {
 }
 .project-slider .single-project .project-img img {
   width: 100%;
+  height: 23rem;
 }
 .project-slider .single-project .project-title {
   position: absolute;
