@@ -845,6 +845,16 @@
     padding: 0px;
     background-image: url(/assets/images/hero/hero.jpg);
     background-size: cover;
+    background-position: center;
+  }
+
+  .about-sec .sec-images {
+    display: none;
+  }
+
+  .services-links,
+  .pages-links {
+    display: none;
   }
 
   .br-style1 {
