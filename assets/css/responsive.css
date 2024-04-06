@@ -290,6 +290,10 @@
   .main-slider-three .image-layer {
     top: 0px;
   }
+
+  .hero-content .hero-tagline {
+    display: none;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -634,9 +638,24 @@
   /********** Hero section **********/
   .hero-ptb {
     padding: 0px;
+    width: 100%;
+    height: 40rem;
+  }
+
+  .hero-content {
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    text-align: left;
+    white-space: wrap;
+    height: auto;
+    top: 220px;
   }
   .hero-content h1.hero-title {
-    font-size: 42px;
+    font-size: 25px;
   }
   .br-style1 {
     border-radius: 0px 140px 0px 160px;
@@ -652,6 +671,9 @@
   .hero-content .hero-team-info {
     margin-top: 50px;
   }
+  /* 
+  .hero-content .hero-btn-area a.thm-btn:last-child {
+  } */
   /********** Service section **********/
   .service-lists-style1 .single-service-icon {
     width: 76px;
