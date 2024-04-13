@@ -1,74 +1,32 @@
-/* CSS Index
-============================
-1. Variable and Theme default css
-2. Comon CSS
-3. Helping Class 
-4. Sec Content and Sec Title CSS
-5. Thm Btn CSS
-6. breadcumb css
-7. Hero section CSS
-8. About section CSS
-9. Service Section CSS
-10. Newsletter Section CSS
-11. Project Section CSS
-12. Business Section CSS
-13. company quick info Section CSS
-14. pricing Section CSS
-15. Brand Section CSS
-16. Testimonial Section CSS
-17. Team Section CSS
-18. Faq Section CSS
-19. Blog Section CSS
-20. Footer Section CSS
-21. Service Details page CSS
-22. Team Details page CSS
-23. 404 page CSS
-24. Contact page CSS
-
-============================
-*/
-/*=============================
-	1. Google Fonts
-===============================*/
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
-/*** 
-====================================================================
-	Css Files
-====================================================================
-***/
-/* Module Css */
-@import url("module-css/header.css");
-/*=============================
-	1. Variable CSS
-===============================*/
+@import "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap";
+@import "module-css/header.css";
 :root {
-  --thm-body-font: "Outfit", sans-serif;
+  --thm-body-font: Outfit, sans-serif;
   --thm-body-font-size: 18px;
   --thm-body-font-weight: 400;
   --thm-body-font-color: #383838;
-  --thm-heading-font: "Outfit", sans-serif;
+  --thm-heading-font: Outfit, sans-serif;
   --thm-heading-font-color: #101010;
   --thm-heading-font-weight: 700;
-  --thm-primary: #ff9017; /* #164343 */
-  --thm-secondary: #999999; /* #16a571 */
-  --thm-primary-gray: #4d4d4d; /* new color */
-  --thm-secondary-orange: #ff9017; /* new color */
+  --thm-primary: #ff9017;
+  --thm-secondary: #999;
+  --thm-primary-gray: #4d4d4d;
+  --thm-secondary-orange: #ff9017;
   --thm-accent: #ffb667;
-  --thm-body-background: #ffffff;
-  --thm-bg-white: #ffffff;
-  --thm-bg-ling-green: #f9efe3; /* #e3f9f5 */
-  --thm-white: #ffffff;
+  --thm-body-background: #fff;
+  --thm-bg-white: #fff;
+  --thm-bg-ling-green: #f9efe3;
+  --thm-white: #fff;
   --thm-black: #101010;
-  --thm-green: #4e4e4e8e; /* #164343 */
-  --thm-teal: #ff9017; /* #16a571 */
-  --thm-gray70: #6d6d6d86; /* new color */
-  --thm-orange: #ff9017; /* new color */
-  --thm-blue: #94cbf4; /* new color */
-  --thm-pink: #f38083; /* new color */
-  --thm-secondary-pink: #f8bec0; /* new color */
-  --thm-third-pink: #ef575a; /* new color */
+  --thm-green: #4e4e4e8e;
+  --thm-teal: #ff9017;
+  --thm-gray70: #6d6d6d86;
+  --thm-orange: #ff9017;
+  --thm-blue: #94cbf4;
+  --thm-pink: #f38083;
+  --thm-secondary-pink: #f8bec0;
+  --thm-third-pink: #ef575a;
 }
-
 body {
   font-family: var(--thm-body-font);
   font-weight: var(--thm-body-font-weight);
@@ -79,31 +37,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 p {
   margin-bottom: 0;
 }
-
 ul,
 li {
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
-
 .img {
   max-width: 100%;
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+  -webkit-transition: all 0.3s ease-out 0;
+  transition: all 0.3s ease-out 0;
 }
-
 a,
 button {
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+  -webkit-transition: all 0.3s ease-out 0;
+  transition: all 0.3s ease-out 0;
   text-decoration: none;
 }
-
 a:focus,
 .btn:focus,
 button:focus {
@@ -112,21 +65,18 @@ button:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-
 a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
   color: var(--thm-secondary);
   text-decoration: none;
 }
-
 a,
 button {
   color: var(--thm-secondary);
   outline: medium none;
   text-decoration: none;
 }
-
 .btn:focus,
 button:focus,
 input:focus,
@@ -135,15 +85,12 @@ textarea,
 textarea:focus {
   outline: 0;
 }
-
 .uppercase {
   text-transform: uppercase;
 }
-
 .capitalize {
   text-transform: capitalize;
 }
-
 h1,
 h2,
 h3,
@@ -152,7 +99,7 @@ h5,
 h6 {
   font-family: var(--thm-heading-font);
   color: var(--thm-heading-font-color);
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 0;
   font-style: normal;
   line-height: 1.2em;
@@ -161,7 +108,6 @@ h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 h1 a,
 h2 a,
 h3 a,
@@ -170,88 +116,61 @@ h5 a,
 h6 a {
   color: inherit;
 }
-
 h1 {
   font-size: 4rem;
 }
-
 h2 {
   font-size: 3.12rem;
 }
-
 h3 {
   font-size: 1.75rem;
 }
-
 h4 {
   font-size: 1.5rem;
 }
-
 h5 {
   font-size: 1.25rem;
 }
-
 h6 {
   font-size: 1rem;
 }
-
-/*=============================
-	2. Comon CSS
-===============================*/
-/* .bg-green {
-  background-color: var(--thm-green);
-} */
-
 .bg-light-greem {
   background-color: var(--thm-body-background);
 }
-
 .hero-ptb {
-  padding: 50px 100px 50px 100px;
+  padding: 50px 100px;
 }
-
 .sec-ptb {
   padding: 1rem 0;
 }
-
 .sec-pt {
   padding-top: 140px;
 }
-
 .sec-pb {
   padding-bottom: 140px;
 }
-
 .ml-100 {
   margin-left: 100px;
 }
-
 .mr-100 {
   margin-right: 100px;
 }
-
 .c-black {
   color: var(--thm-black) !important;
 }
-
-/*=============================
-	3. Helping Class CSS
-===============================*/
 .text-white {
   color: var(--thm-white);
 }
-
 .text-teal {
   color: var(--thm-teal);
 }
-
 .br-style1 {
   position: relative;
   top: 3rem;
   width: 533px;
   height: 800px;
   z-index: -1;
-  border-radius: 0px 180px 0px 200px;
+  border-radius: 0 180px 0 200px;
 }
 .br-style1::before {
   content: "";
@@ -259,11 +178,10 @@ h6 {
   height: 100%;
   width: 100%;
   border: 2px solid rgba(255, 255, 255, 0.12);
-  border-radius: 0px 200px;
+  border-radius: 0 200px;
   top: -30px;
   left: 30px;
 }
-
 .br-style2 {
   border-radius: 10px !important;
 }
@@ -271,10 +189,6 @@ h6 {
   border: 2px solid rgba(255, 144, 67, 0.4);
   border-radius: 10px !important;
 }
-
-/*=============================
-    4. Sec Content CSS
-===============================*/
 .sec-content p {
   margin-bottom: 30px;
 }
@@ -298,10 +212,6 @@ h6 {
   display: inline-block;
   margin-top: 10px;
 }
-
-/*=============================
-	4. Sec Title CSS
-===============================*/
 .sec-sub-title {
   position: relative;
   display: block;
@@ -311,7 +221,6 @@ h6 {
   line-height: 20px;
   color: var(--thm-third-pink);
 }
-
 .sec-title {
   position: relative;
   display: block;
@@ -319,10 +228,6 @@ h6 {
   font-size: 50px;
   line-height: 68px;
 }
-
-/*=============================
-	5. Thm Btn CSS
-===============================*/
 .thm-btn {
   position: relative;
   display: -webkit-inline-box;
@@ -345,7 +250,6 @@ h6 {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-
 .thm-btn::before {
   width: 100%;
   height: 100%;
@@ -359,12 +263,10 @@ h6 {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .thm-btn:hover:before,
 .thm-btn:hover:after {
   width: 0;
 }
-
 .thm-btn .txt {
   position: relative;
   display: -webkit-inline-box;
@@ -375,20 +277,17 @@ h6 {
   align-items: center;
   z-index: 1;
 }
-
 .thm-btn:hover {
   color: var(--thm-pink);
 }
-
 .thm-btn i {
   position: relative;
-  top: 0px;
+  top: 0;
   display: inline-block;
   margin-left: 7px;
   font-size: 16px;
   z-index: 1;
 }
-
 a.read-more {
   font-size: 18px;
   line-height: 30px;
@@ -405,7 +304,6 @@ a.read-more i {
 a.read-more:hover i {
   margin-left: 5px;
 }
-
 .thm-btn-style2 {
   color: var(--thm-white);
   border: 2px solid var(--thm-green);
@@ -416,8 +314,6 @@ a.read-more:hover i {
 .thm-btn-style2:hover {
   color: var(--thm-green);
 }
-
-/*== Owl Nav Style1 Css ======*/
 .owl-nav {
   position: absolute;
   display: -webkit-box;
@@ -452,64 +348,53 @@ a.read-more:hover i {
 .owl-nav .owl-prev {
   margin-right: 24px;
 }
-
 .list-wrap {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
-
 .list-wrap li {
   list-style: none;
 }
-
 hr {
   border-bottom: 1px solid var(--thm-primary-color);
   border-top: 0 none;
   margin: 30px 0;
   padding: 0;
 }
-
 label {
   color: var(--thm-body-font-color);
   cursor: pointer;
   font-size: 16px;
   font-weight: 400;
 }
-
-*::-moz-placeholder {
+::-moz-placeholder {
   color: var(--thm-body-font-color);
   font-size: var(--thm-body-font-size);
   opacity: 1;
 }
-
-*::-webkit-input-placeholder {
+::-webkit-input-placeholder {
   color: var(--thm-body-font-color);
   font-size: var(--thm-body-font-size);
   opacity: 1;
 }
-
-*:-ms-input-placeholder {
+:-ms-input-placeholder {
   color: var(--thm-body-font-color);
   font-size: var(--thm-body-font-size);
   opacity: 1;
 }
-
-*::-ms-input-placeholder {
+::-ms-input-placeholder {
   color: var(--thm-body-font-color);
   font-size: var(--thm-body-font-size);
   opacity: 1;
 }
-
-*::placeholder {
+::placeholder {
   color: var(--thm-body-font-color);
   font-size: var(--thm-body-font-size);
   opacity: 1;
 }
-
 .theme-overlay {
   position: relative;
 }
-
 .theme-overlay::before {
   background: var(--thm-primary-color) none repeat scroll 0 0;
   content: "";
@@ -520,35 +405,27 @@ label {
   top: 0;
   width: 100%;
 }
-
 .separator {
   border-top: 1px solid var(--thm-primary-color);
 }
-
 .auto-container {
   position: static;
   max-width: 1320px;
   width: 100%;
-  padding: 0px 12px;
+  padding: 0 12px;
   margin: 0 auto;
 }
-
-/* Bootstrap 5 */
 .container {
   max-width: 1320px;
   padding-left: 12px;
   padding-right: 12px;
-  /* border: 1px solid; */
 }
-
 .row {
   --bs-gutter-x: 24px;
 }
-
 .row.g-0 {
   --bs-gutter-x: 0;
 }
-
 .fix {
   position: relative;
   margin: 0 auto;
@@ -556,11 +433,6 @@ label {
   min-width: 300px;
   overflow: hidden;
 }
-
-/*=============================
-	scrollUp css
-===============================*/
-/* scrollUp */
 .scroll-top {
   width: 50px;
   height: 50px;
@@ -579,11 +451,9 @@ label {
   transition: 1s ease;
   border: none;
 }
-
 .scroll-top.open {
   bottom: 30px;
 }
-
 .scroll-top::after {
   position: absolute;
   z-index: -1;
@@ -599,31 +469,24 @@ label {
     rgba(0, 0, 0, 0) 80%
   );
 }
-
 .scroll-top:hover {
   background: var(--thm-secondary);
 }
-
-/*=============================
-	accordion css
-===============================*/
 .accordion-container .accordion-title {
   position: relative;
   margin: 0;
   padding: 0.625em 0.625em 0.625em 2em;
   background-color: #000;
   font-size: 1.25em;
-  font-weight: normal;
+  font-weight: 400;
   color: #fff;
   cursor: pointer;
 }
-
 .accordion-container .accordion-title:hover,
 .accordion-container .accordion-title:active,
 .accordion-title.open {
   background-color: #00aaa7;
 }
-
 .accordion-container .accordion-title::before {
   content: "";
   position: absolute;
@@ -637,7 +500,6 @@ label {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .accordion-container .accordion-title::after {
   content: "";
   position: absolute;
@@ -649,24 +511,17 @@ label {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-
 .accordion-container .accordion-title.open::before {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-
 .accordion-container .accordion-title.open::after {
   opacity: 0;
 }
-
 .accordion-content {
   padding-left: 2.3125em;
   border: 1px solid #0079c1;
 }
-
-/*=============================
-	6. breadcumb section css
-===============================*/
 #site-breadcumb {
   background-size: cover;
   background-repeat: no-repeat;
@@ -676,7 +531,6 @@ label {
   background: rgba(22, 67, 67, 0.9);
   padding: 280px 0 140px;
 }
-
 .breadcumb-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,10 +576,6 @@ label {
 .breadcumb-content ul.page-navigator li:last-child::after {
   display: none;
 }
-
-/*=============================
-	7. Hero section CSS
-===============================*/
 .hero-content {
   position: relative;
   margin: 100px 3%;
@@ -797,7 +647,6 @@ label {
   line-height: normal;
   font-weight: var(--thm-heading-font-weight);
 }
-
 .hero-images {
   position: relative;
 }
@@ -809,8 +658,8 @@ label {
   right: -70px;
   bottom: -30px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 10px 50px 0px rgba(16, 16, 16, 0.5);
-  box-shadow: 0px 10px 50px 0px rgba(16, 16, 16, 0.5);
+  -webkit-box-shadow: 0 10px 50px 0 rgba(16, 16, 16, 0.5);
+  box-shadow: 0 10px 50px 0 rgba(16, 16, 16, 0.5);
   overflow: hidden;
   -webkit-animation-name: moveUpDown;
   animation-name: moveUpDown;
@@ -821,7 +670,6 @@ label {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
-
 .hero-style1::before {
   content: "\f103";
   font-family: flaticon_itco !important;
@@ -839,7 +687,6 @@ label {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
-
 .hero-sec2 {
   position: relative;
 }
@@ -860,14 +707,12 @@ label {
   -webkit-animation: zoomInOut 5s infinite;
   animation: zoomInOut 5s infinite;
 }
-
 .hero-content-style1::before,
 .hero-content-style1::after {
   content: "";
   position: absolute;
   font-family: flaticon_itco !important;
 }
-
 .hero-content-style1::before {
   height: 50px;
   width: 50px;
@@ -878,7 +723,6 @@ label {
   -webkit-animation: zoomInOut 2s infinite;
   animation: zoomInOut 2s infinite;
 }
-
 .hero-content-style1::after {
   height: 150px;
   width: 150px;
@@ -888,7 +732,6 @@ label {
   -webkit-animation: Roted 3s infinite;
   animation: Roted 3s infinite;
 }
-
 .hero-slider-item {
   width: 100%;
   height: 80vh;
@@ -934,7 +777,6 @@ label {
   transition-delay: 1s;
   opacity: 0;
 }
-
 .hero-slider .owl-nav {
   top: 50%;
   width: 100%;
@@ -966,7 +808,6 @@ label {
   background: var(--thm-teal);
   border-color: var(--thm-teal);
 }
-
 .hero-slider .owl-item.active span.hero-tagline {
   -webkit-animation: fadeInDown;
   animation: fadeInDown;
@@ -1003,10 +844,6 @@ label {
   animation-delay: 1.2s;
   opacity: 1;
 }
-
-/*=============================
-	8. About section CSS
-===============================*/
 .about-sec .sec-content {
   width: 100%;
   height: 100%;
@@ -1021,7 +858,6 @@ label {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-
 .about-sec .sec-images {
   position: relative;
 }
@@ -1031,7 +867,7 @@ label {
 }
 .about-sec .sec-images .sec-img-one img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .about-sec .sec-images .sec-img-one::after {
   content: "\f120";
@@ -1054,7 +890,6 @@ label {
 .about-sec .sec-images .sec-img-two img {
   width: 100%;
 }
-
 .about-sec2 .sec-img-one {
   width: 100% !important;
   border-radius: 10px !important;
@@ -1085,7 +920,6 @@ label {
   color: var(--thm-white);
   text-align: center;
 }
-
 .about-sec3 .sec-images {
   position: relative;
   border-radius: 10px !important;
@@ -1106,17 +940,12 @@ label {
 .about-sec3 .sec-images .sec-img-two img {
   width: 100%;
 }
-
-/*=============================
-	9. Service Section CSS
-===============================*/
 .service-sec .sec-content {
   margin-right: 20px;
 }
-
 .service-lists-style1 .single-service {
   position: relative;
-  padding: 15px 0px;
+  padding: 15px 0;
   border-bottom: 1px solid rgba(56, 56, 56, 0.3);
 }
 .service-lists-style1 .single-service:first-child {
@@ -1131,7 +960,6 @@ label {
 .service-lists-style1 .single-service:hover .single-service-icon i {
   color: var(--thm-white);
 }
-
 .service-lists-style1 .single-service-icon {
   height: 60px;
   width: 60px;
@@ -1171,12 +999,11 @@ label {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-
 .single-service-style2 {
   border-radius: 10px;
   overflow: hidden;
-  -webkit-box-shadow: 0px 10px 50px 0px rgba(223, 124, 19, 0.15);
-  box-shadow: 0px 10px 50px 0px rgba(223, 124, 19, 0.15);
+  -webkit-box-shadow: 0 10px 50px 0 rgba(223, 124, 19, 0.15);
+  box-shadow: 0 10px 50px 0 rgba(223, 124, 19, 0.15);
 }
 .single-service-style2 .img-box {
   -webkit-transition: all 0.3s linear;
@@ -1201,7 +1028,7 @@ label {
   display: block;
 }
 rect {
-  fill: #ff0000;
+  fill: red;
 }
 .single-service-style2 .content-box .single-service-icon i {
   font-size: 80px;
@@ -1211,7 +1038,6 @@ rect {
   -webkit-transform: translate3d(0, -15px, 0) scale(1.1);
   transform: translate3d(0, -15px, 0) scale(1.1);
 }
-
 .service-cat-sec {
   margin-top: -100px;
   position: relative;
@@ -1223,8 +1049,8 @@ rect {
   padding: 14px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.92);
-  -webkit-box-shadow: 0px 10px 50px rgba(16, 16, 16, 0.1);
-  box-shadow: 0px 10px 50px rgba(16, 16, 16, 0.1);
+  -webkit-box-shadow: 0 10px 50px rgba(16, 16, 16, 0.1);
+  box-shadow: 0 10px 50px rgba(16, 16, 16, 0.1);
 }
 .service-cat-sec .single-service::before {
   content: "";
@@ -1271,17 +1097,12 @@ rect {
   -webkit-transform: translateX(10px);
   transform: translateX(10px);
 }
-
 .service-page-sec {
   padding-bottom: 116px;
 }
 .service-page-sec .single-service-style2 {
   margin-bottom: 24px;
 }
-
-/*=============================
-	11. Project Section CSS
-===============================*/
 .project-slider {
   position: relative;
 }
@@ -1360,11 +1181,9 @@ rect {
   right: 0;
   top: -60px;
 }
-
 .project-sec2 {
   padding-bottom: 116px;
 }
-
 .single-project-style2 {
   position: relative;
   border-radius: 10px;
@@ -1446,7 +1265,6 @@ rect {
   bottom: 40%;
   opacity: 1;
 }
-
 .single-project-style3 .project-title {
   height: 100%;
   padding: 30px;
@@ -1475,15 +1293,10 @@ rect {
   background: var(--thm-teal);
   color: var(--thm-white);
 }
-
 .project-slider2 .owl-nav {
   right: 0;
   top: -60px;
 }
-
-/*=============================
-	12. Business Section CSS
-===============================*/
 .business-sec {
   padding-bottom: 250px;
 }
@@ -1495,31 +1308,26 @@ rect {
 .business-sec .sec-images img {
   width: 100%;
 }
-
 .ab-progress .progress-title {
   font-family: var(--thm-body-font);
   font-size: 16px;
   font-weight: 500;
   color: var(--thm-black);
 }
-
 .ab-progress .ab-progress-bar {
   height: 8px;
   background: var(--thm-teal);
   border-radius: 6px;
 }
-
 .ab-progress .progress-bar-wrap {
   height: inherit;
   background: #a1cebe;
   border-radius: 6px;
   border: none;
 }
-
 .ab-progress + .ab-progress {
   margin-top: 25px;
 }
-
 .ab-progress .progress-indicator-inner {
   font-family: var(--thm-body-font);
   font-size: 16px;
@@ -1527,14 +1335,9 @@ rect {
   color: var(--thm-white);
   background: var(--thm-green);
 }
-
 .ab-progress .down-arrow {
   border-top: 7px solid var(--progress-indicator-background, var(--thm-green));
 }
-
-/*=============================
-	13. company quick info Section CSS
-===============================*/
 .company-qinfo-raaper {
   padding: 50px 0;
   margin-top: 2rem;
@@ -1568,20 +1371,17 @@ rect {
   line-height: 30px;
   font-weight: var(--thm-heading-font-weight);
 }
-
-/*=============================
-	14. pricing Section CSS
-===============================*/
 .single-pricing {
   border-radius: 10px;
   background: var(--thm-white);
-  -webkit-box-shadow: 0px 10px 10px 0px rgba(22, 165, 113, 0.08);
-  box-shadow: 0px 10px 10px 0px rgba(22, 165, 113, 0.08);
+  -webkit-box-shadow: 0 10px 10px 0 rgba(22, 165, 113, 0.08);
+  box-shadow: 0 10px 10px 0 rgba(22, 165, 113, 0.08);
   overflow: hidden;
 }
 .single-pricing img {
   width: 100%;
   height: auto;
+  border-radius: 20px;
   margin-bottom: 10rem;
 }
 .single-pricing .pricing-content {
@@ -1606,7 +1406,6 @@ rect {
   top: 6px;
   left: 0;
 }
-
 .single-pricing.popular .pricing-badge {
   background: var(--thm-green);
 }
@@ -1623,10 +1422,6 @@ rect {
   background: var(--thm-teal);
   color: var(--thm-black);
 }
-
-/*=============================
-	15. Brand Section CSS
-===============================*/
 .brand-sec .sec-content h5 {
   font-size: 20px;
   line-height: 30px;
@@ -1635,14 +1430,9 @@ rect {
 .brand-sec .sec-content h5 span {
   color: var(--thm-teal);
 }
-
 .brand-slider .item img {
   width: inherit;
 }
-
-/*=============================
-	16. Testimonial Section css
-===============================*/
 .single-testimonial {
   position: relative;
   border-radius: 10px;
@@ -1693,7 +1483,6 @@ rect {
   font-size: 60px;
   color: rgba(22, 165, 113, 0.3);
 }
-
 .testimonial-slider .owl-dots,
 .testimonial-slider3 .owl-dots {
   display: -webkit-box !important;
@@ -1728,12 +1517,10 @@ rect {
 .testimonial-slider3 .owl-dots .owl-dot.active {
   border-color: var(--thm-teal);
 }
-
 .testimonial-sec2 .sec-content h2.sec-title,
 .testimonial-sec2 .sec-content h6.sec-sub-title {
   color: var(--thm-white);
 }
-
 .testimonial-slider2 {
   position: relative;
 }
@@ -1760,7 +1547,6 @@ rect {
 .testimonial-slider2 .owl-nav .owl-next {
   right: 0;
 }
-
 .single-testimonial-style2 .feedback {
   margin: 0 10%;
   padding-bottom: 100px;
@@ -1794,13 +1580,12 @@ rect {
 .single-testimonial-style2 .customar-info .customar-title span.title {
   color: var(--thm-white);
 }
-
 .single-testimonial-style3 {
   padding: 50px 30px;
   border-radius: 10px;
   background: var(--thm-white);
-  -webkit-box-shadow: 0px 10px 10px 0px rgba(22, 165, 113, 0.08);
-  box-shadow: 0px 10px 10px 0px rgba(22, 165, 113, 0.08);
+  -webkit-box-shadow: 0 10px 10px 0 rgba(22, 165, 113, 0.08);
+  box-shadow: 0 10px 10px 0 rgba(22, 165, 113, 0.08);
 }
 .single-testimonial-style3 .feedback {
   width: 34%;
@@ -1841,16 +1626,12 @@ rect {
   color: var(--thm-teal);
   font-size: 60px;
 }
-
-/* Testimonial page css*/
 .testimonial-page-sec {
   padding-bottom: 116px;
 }
-
 .testimonial-page-sec .single-testimonial {
   margin-bottom: 24px;
 }
-
 .faq-page.testimonial-sec2 h6.sec-sub-title {
   color: var(--thm-teal);
 }
@@ -1869,14 +1650,9 @@ rect {
 .faq-page.testimonial-sec2 .single-testimonial-style2 .feedback {
   border-color: rgba(56, 56, 56, 0.3);
 }
-
 .faq-page.testimonial-sec2 .testimonial-slider2::before {
   color: rgba(22, 165, 113, 0.1);
 }
-
-/*=============================
-	17. Team Section CSS
-===============================*/
 .single-team {
   position: relative;
   border-radius: 10px;
@@ -1940,7 +1716,7 @@ rect {
   line-height: 42px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  color: white;
+  color: #fff;
 }
 .single-team:hover ul.team-social {
   top: 0;
@@ -1953,7 +1729,6 @@ rect {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
-
 .team-slider .owl-nav {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -1969,17 +1744,12 @@ rect {
 .team-slider .owl-nav .owl-next:hover {
   background: var(--thm-teal);
 }
-
 .team-page-sec {
   padding-bottom: 116px;
 }
 .team-page-sec .single-team {
   margin-bottom: 24px;
 }
-
-/*=============================
-	18. Faq Section CSS
-===============================*/
 .faq-sec #accordion h4.accordion-title {
   padding: 15px 20px;
   font-size: 20px;
@@ -2008,19 +1778,6 @@ rect {
   margin: 0 5px 20px;
   border: none;
 }
-/*
-.accordion-content #accordion-content-link .accordion-content-link {
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  color: rgb(255, 0, 0)
-}
-
-.accordion-content:hover #accordion-content-link .accordion-content-link {
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  color: rgb(98, 0, 255)
-}
-*/
 .faq-sec #accordion .accordion-content:last-child {
   margin-bottom: 0;
 }
@@ -2028,16 +1785,12 @@ rect {
   margin-left: 76px;
 }
 .faq-sec .sec-images .sec-img-one {
-  border-radius: 275px 0px;
+  border-radius: 275px 0;
   overflow: hidden;
 }
 .faq-sec .sec-images .sec-img-one img {
   width: 100%;
 }
-
-/*=============================
-	19. Blog Section CSS
-===============================*/
 .blog-box-shadow {
   -webkit-box-shadow: 0 4.8px 24.4px -6px rgba(22, 165, 113, 0.1),
     0 4px 13px -2px rgba(22, 165, 113, 0.08);
@@ -2046,7 +1799,6 @@ rect {
   border-radius: 10px;
   overflow: hidden;
 }
-
 .blog-item .img-box {
   border-radius: 10px;
   overflow: hidden;
@@ -2120,7 +1872,6 @@ rect {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 .blog-left-box .content-box {
   margin: 26px 0 0;
 }
@@ -2128,7 +1879,6 @@ rect {
   font-size: 30px;
   line-height: 42px;
 }
-
 .blog-sidebar-box-item {
   margin-bottom: 30px;
   padding-bottom: 30px;
@@ -2157,7 +1907,6 @@ rect {
   font-size: 20px;
   line-height: 30px;
 }
-
 .blog-page-sec .blog-item-wrapper .blog-item:last-child {
   margin-bottom: 0;
 }
@@ -2167,7 +1916,6 @@ rect {
 .blog-page-sec .blog-btn {
   margin-top: 40px;
 }
-
 .blog-pagination {
   margin-top: 40px;
 }
@@ -2202,7 +1950,6 @@ rect {
   color: var(--thm-white);
   background: var(--thm-teal);
 }
-
 .blog-item-details .blog-title h3 {
   padding-bottom: 18px;
   font-size: 50px !important;
@@ -2249,7 +1996,6 @@ rect {
   top: 6px;
   left: 0;
 }
-
 .blog-tags-share {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2298,14 +2044,13 @@ rect {
   justify-content: center;
   font-size: 16px;
   color: var(--thm-black);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .blog-tags-share .blog-share li a:hover {
   background: var(--thm-teal);
   color: var(--thm-white);
 }
-
 .blog-autor-bio {
   padding: 40px;
   display: -webkit-box;
@@ -2348,14 +2093,12 @@ rect {
 .blog-autor-bio .avater-content ul.autor-social li a:hover {
   color: var(--thm-teal);
 }
-
 .blog-comments h3 {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(56, 56, 56, 0.12);
   font-size: 30px;
 }
-
 .comment-item .children {
   margin-left: 60px;
 }
@@ -2408,7 +2151,6 @@ rect {
   background: var(--thm-teal);
   color: var(--thm-white);
 }
-
 .blog-contact-form {
   padding: 30px;
   margin-top: 50px;
@@ -2422,16 +2164,11 @@ rect {
 .blog-contact-form p {
   margin-bottom: 30px;
 }
-
 .comment-list > .comment-item:last-child .post-comment {
   padding: 0;
   margin: 0;
   border: none;
 }
-
-/*=============================
-	20. Footer Section CSS
-===============================*/
 .footer-sec {
   background-color: var(--thm-blue);
 }
@@ -2440,13 +2177,11 @@ rect {
   margin-top: 10px;
   border: 1px solid rgba(255, 255, 255, 0.577);
 }
-
 .footer-widget.pages-links {
   margin-left: -40px;
 }
-
 .footer-widget {
-  color: whitesmoke;
+  color: #f5f5f5;
   margin-bottom: 40px;
 }
 .footer-widget .footer-widget-logo {
@@ -2456,10 +2191,10 @@ rect {
   margin-bottom: 30px;
   font-size: 26px;
   line-height: 42px;
-  color: white;
+  color: #fff;
 }
 .footer-widget .footer-widget-content .footer-social-icon a:hover {
-  background: white;
+  background: #fff;
   color: var(--thm-secondary-pink);
 }
 .footer-widget .footer-widget-content .footer-social-icon a:last-child {
@@ -2473,7 +2208,7 @@ rect {
   margin-bottom: 12px;
 }
 .footer-widget .footer-widget-content .footer-links ul li a {
-  color: white;
+  color: #fff;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   font-size: 15px;
@@ -2484,7 +2219,6 @@ rect {
 .footer-widget .footer-widget-content .footer-links ul li:last-child {
   margin-bottom: 0;
 }
-
 .footer-recent-post .blog-sidebar-box-item {
   margin-bottom: 20px;
   padding-bottom: 0;
@@ -2524,7 +2258,6 @@ rect {
   margin-bottom: 0;
   color: var(--thm-black);
 }
-
 .footer-copyright-text p {
   color: var(--thm-white);
   font-size: 15px;
@@ -2532,16 +2265,12 @@ rect {
   padding: 0;
 }
 .footer-copyright-text p a {
-  font-weight: bold;
+  font-weight: 700;
   color: var(--thm-primary-gray);
 }
-
 .footer2 .section-overlay {
   padding-top: 2rem;
 }
-/*=============================
-	21. Service Details page CSS
-===============================*/
 .service-details-wrapper .feature-img {
   border-radius: 10px;
   overflow: hidden;
@@ -2550,7 +2279,6 @@ rect {
 .service-details-wrapper .feature-img img {
   width: 100%;
 }
-
 .service-details-content .info-part {
   margin-bottom: 50px;
 }
@@ -2584,7 +2312,6 @@ rect {
   top: 6px;
   left: 0;
 }
-
 .sidebar-item {
   padding: 30px;
   border-radius: 10px;
@@ -2698,8 +2425,8 @@ rect {
   padding: 10px 12px;
   border-radius: 6px;
   background: var(--thm-bg-ling-green);
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+  -webkit-transition: all 0.3s ease-out 0;
+  transition: all 0.3s ease-out 0;
 }
 .sidebar-item .blog-tags ul li:hover {
   background: var(--thm-teal);
@@ -2710,7 +2437,6 @@ rect {
 .sidebar-item .blog-tags ul li a {
   color: var(--thm-black);
 }
-
 .blog-sidebar-search form {
   padding: 11px 20px;
   border-radius: 10px;
@@ -2753,12 +2479,8 @@ rect {
 .blog-sidebar-search form input {
   width: 100%;
 }
-
-/*=============================
-	22. Team Details page CSS
-===============================*/
 .team-fbio-sec .member-fbio-img {
-  border-radius: 200px 0px;
+  border-radius: 200px 0;
   overflow: hidden;
 }
 .team-fbio-sec .member-fbio-img img {
@@ -2837,17 +2559,9 @@ rect {
 .team-fbio-sec .progressbar-tooltip {
   margin-left: 76px;
 }
-
-/*=============================
-	23. 404 page CSS
-===============================*/
 .error-sec .error-content button {
   margin-top: 60px;
 }
-
-/*=============================
-	24. Contact page CSS
-===============================*/
 form.itco-cform .contact-field {
   margin-bottom: 20px;
 }
@@ -2882,7 +2596,6 @@ form.itco-cform .contact-field input::placeholder,
 form.itco-cform .contact-field textarea::placeholder {
   color: rgba(56, 56, 56, 0.5);
 }
-
 form.itco-sform .contact-field {
   margin-bottom: 18px;
 }
@@ -2890,7 +2603,6 @@ form.itco-sform .contact-field input,
 form.itco-sform .contact-field textarea {
   padding: 10px 20px;
 }
-
 .contact-page-sec .sec-content {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -2961,7 +2673,6 @@ form.itco-sform .contact-field textarea {
   background: var(--thm-teal);
   color: var(--thm-white);
 }
-
 .contact-map-sec {
   overflow: hidden;
 }
