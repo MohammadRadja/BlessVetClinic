@@ -513,43 +513,43 @@ mark, ins {
   background: transparent;
 }
 .bg-primary {
-  background: #9ed3d1      ;
+  background: #ec3236; /* Merah */
 }
 .bg-primary-secondary {
-  background-color: #e0f7fa ;
+  background-color: #9ed3d1; /* Biru kehijauan lembut */
 }
 .bg-primary-tertiary {
-  background-color: #e8f5e9 ;
+  background-color: #e0f7fa; /* Biru muda */
 }
 .bg-primary-quaternary {
-  background-color: #dcedc8 ;
+  background-color: #ffedcc; /* Krem */
 }
 .bg-primary-quinary {
-  background-color: #b2dfdb ;
+  background-color: #ffe5e5; /* Merah muda lembut */
 }
 
-
 .text-primary {
-  color: #ffffff; /* Putih */
+  color: #e2e6ea; /* Putih */
 }
 
 .text-primary-secondary {
-  color: #0097b2; /* Biru kehijauan */
+  color: #9ed3d1; /* Biru kehijauan lembut */
 }
 
 .text-primary-tertiary {
-  color: #c0ff72; /* Hijau muda terang */
+  color: #ffedcc; /* Krem */
 }
 
 .text-primary-quaternary {
-  color: #bfff70; /* Hijau muda */
+  color: #ffe5e5; /* Merah muda lembut */
 }
 
 .text-primary-quinary {
-  color: #0096b1; /* Biru kehijauan */
+  color: #ec3236; /* Merah */
 }
+
 .text-primary:hover {
-  color: #e0e0e0; /* Abu-abu muda untuk kontras */
+  color: #ff9999; /* Merah muda cerah */
 }
 
 .text-primary-secondary:hover {
@@ -557,15 +557,15 @@ mark, ins {
 }
 
 .text-primary-tertiary:hover {
-  color: #a6ff3d; /* Hijau muda yang lebih cerah */
+  color: #ffcc99; /* Krem lebih cerah */
 }
 
 .text-primary-quaternary:hover {
-  color: #d4ff6f; /* Hijau muda lebih cerah */
+  color: #ff9999; /* Merah muda cerah */
 }
 
 .text-primary-quinary:hover {
-  color: #00b2d3; /* Biru kehijauan yang lebih cerah */
+  color: #ff0000; /* Merah terang */
 }
 
 .padding-top-bottom-0 {
@@ -1342,21 +1342,9 @@ input.form-control, select.form-control {
   align-items: center;
   text-decoration: none; /* Menghapus garis bawah pada link */
 }
-
-.logo-brand a {
-  display: flex;
-  align-items: center;
-  color: #333; /* Ganti warna sesuai kebutuhan */
-}
-
 .logo-img {
   width: 150px; /* Ukuran logo bisa disesuaikan */
   height: auto;
-}
-
-.logo-text {
-  font-size: 25px; /* Ukuran teks bisa disesuaikan */
-  font-weight: bold; /* Atau sesuaikan sesuai kebutuhan */
 }
 .main-navigation {
   text-align: right;
@@ -1377,7 +1365,7 @@ input.form-control, select.form-control {
 }
 .main-navigation ul li a {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: bolder;
   line-height: 1;
   padding: 52px 25px;
   color: #272023;
@@ -1397,7 +1385,7 @@ input.form-control, select.form-control {
   height: 0;
   margin-left: 4px;
   content: "\f107";
-  color: #bdbebf;
+  color: #272023;
   font-family: 'FontAwesome';
   font-weight: 900;
   margin-right: 15px;
@@ -1439,7 +1427,7 @@ input.form-control, select.form-control {
 .main-navigation ul ul li a {
   font-size: 16px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: bolder;
   color: #272023;
   text-align: left;
   display: block;
@@ -2201,9 +2189,6 @@ p .btn-submit {
 /*--------------------------------------------------------------
 ## About Us
 --------------------------------------------------------------*/
-.circle-img {
-  border-radius: 50%;
-}
 .about-img-small {
   position: relative;
   width: 211px;
@@ -2346,6 +2331,22 @@ p .btn-submit {
 .slick-slide .container {
   margin-top: -1px;
 }
+
+.achievement-box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.achievement-item {
+  background: #f8f9fa; /* Background untuk item */
+  padding: 20px; /* Padding sekitar item */
+  border-radius: 8px; /* Sudut membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  margin-bottom: 20px; /* Jarak antar item */
+}
+
 
 /*--------------------------------------------------------------
 ## Testimoial
@@ -3021,7 +3022,7 @@ div:last-child >.process .process-icon:after {
     text-align: center;
   }
 
-  .home-content .home-text h1,h2 {
+  .home-content .home-text p,h3 {
     display: none;
   }
 
@@ -3055,12 +3056,22 @@ div:last-child >.process .process-icon:after {
   position: relative; 
   text-align: center;
 }
+.home-image {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
 .home-content .home-text{
   position: absolute; 
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   color: white;
+}
+.home-content .home-text p{
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 20px;
 }
 .slider .slider-content {
   position: absolute; 
