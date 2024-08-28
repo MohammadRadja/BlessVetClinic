@@ -2333,6 +2333,7 @@ p .btn-submit {
   border-radius: 10px;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .achievement-item:hover {
@@ -2350,6 +2351,12 @@ p .btn-submit {
   font-weight: 700;
   color: #343a40;
   margin-bottom: 5px;
+  transform: translateY(
+    -50%
+  ); /* Menyesuaikan agar garis benar-benar di tengah */
+  letter-spacing: 2px; /* Jarak antar huruf */
+  margin: 20px; /* Jarak bawah */
+  transition: color 0.3s ease; /* Animasi untuk perubahan warna */
 }
 
 .achievement-item h5 {
