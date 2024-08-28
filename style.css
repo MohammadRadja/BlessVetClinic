@@ -1043,13 +1043,20 @@ td {
   vertical-align: middle;
 }
 .btn-whatsapp {
-  background-color: #25d366; /* Hijau WhatsApp */
+  background: linear-gradient(45deg, #25d366, #44eb81);
   color: #fff; /* Teks putih */
   border: none; /* Tanpa border */
   transition: background-color 0.3s ease; /* Animasi transisi */
+  border-radius: 12px; /* Ubah menjadi sudut yang lebih halus */
+  padding: 10px 20px; /* Tambahkan padding untuk kenyamanan */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek 3D */
+  transition: all 0.3s ease; /* Transisi lebih halus */
 }
-.btn-whatsapp:hover {
-  background-color: #20b358; /* Warna hijau yang lebih gelap saat hover */
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+  background: linear-gradient(45deg, #20b358, #019239);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam saat hover */
+  transform: translateY(-3px); /* Sedikit angkat tombol saat di-hover */
   color: #fff; /* Teks tetap putih */
 }
 .btn-emergency {
