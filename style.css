@@ -2264,22 +2264,39 @@ p .btn-submit {
 /*--------------------------------------------------------------
 ## About Us
 --------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .about-section h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .about-text p {
+    display: none;
+  }
+
+  .achievement-item {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
 .about-section {
   padding: 60px 0;
   background-color: #f7f7f7;
 }
 
 .about-section h3 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #343a40;
 }
 
-.about-section p {
-  font-size: 18px;
+.about-section .about-text p {
+  font-size: 15px;
   line-height: 1.8;
   color: #6c757d;
   margin-bottom: 20px;
@@ -2874,8 +2891,11 @@ div:last-child > .process .process-icon:after {
     text-align: center;
   }
 
-  .home-content .home-text p,
-  h3 {
+  .home-content .home-text p {
+    display: none;
+  }
+
+  .home-content .home-text h3 {
     display: none;
   }
 
@@ -3242,6 +3262,49 @@ div:last-child > .process .process-icon:after {
     align-items: center;
     margin: 20px 20px;
   }
+  .font-weight-bold {
+    display: none;
+  }
+
+  .card-body h4 {
+    font-size: 20px; /* Ukuran font untuk kata-kata tambahan */
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+    margin-right: 10px; /* Jarak antara teks tambahan dan teks asli */
+    letter-spacing: 5px; /* Jarak antar huruf */
+    font-weight: bold; /* Menjadikan teks lebih tebal */
+    transform: translateY(
+      -50%
+    ); /* Menyesuaikan agar garis benar-benar di tengah */
+    transition: color 0.3s ease; /* Animasi untuk perubahan warna */
+  }
+  #reservationForm label {
+    text-align: center;
+  }
+
+  /* Mengatur warna dan gaya placeholder */
+  .custom-input::placeholder,
+  .custom-textarea::placeholder {
+    color: #999999; /* Warna placeholder */
+    font-style: italic; /* Gaya font */
+    font-size: 9px; /* Ukuran font */
+    white-space: normal; /* Mengatur jarak antara placeholder dan input */
+    text-align: center;
+  }
+
+  /* Contoh tambahan: mengatur warna placeholder ketika input fokus */
+  .custom-input:focus::placeholder,
+  .custom-textarea::placeholder {
+    color: #666666;
+  }
+  input.form-control {
+    position: relative;
+    font-size: 15px;
+    color: #707070;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 0;
+  }
 }
 .custom-card {
   border-radius: 15px;
@@ -3290,6 +3353,20 @@ div:last-child > .process .process-icon:after {
 .custom-textarea:focus {
   border-color: #007bff;
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+/* Mengatur warna dan gaya placeholder */
+.custom-input::placeholder,
+.custom-textarea::placeholder {
+  color: #999999; /* Warna placeholder */
+  font-style: italic; /* Gaya font */
+  font-size: 18px; /* Ukuran font */
+}
+
+/* Contoh tambahan: mengatur warna placeholder ketika input fokus */
+.custom-input:focus::placeholder,
+.custom-textarea::placeholder {
+  color: #666666;
 }
 
 .custom-textarea {
