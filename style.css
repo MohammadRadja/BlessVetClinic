@@ -522,79 +522,101 @@ ins {
   text-decoration: none;
 }
 
-.bg-light {
-  background-color: #f8f9fa; /* Warna latar belakang terang */
-  border: 1px solid #e0e0e0; /* Garis batas abu-abu terang */
-  border-radius: 8px; /* Sudut melengkung untuk tampilan yang lebih halus */
-  padding: 15px; /* Ruang dalam di sekitar konten */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk efek kedalaman */
-}
-
-/* Menambahkan efek hover untuk interaksi pengguna */
-.bg-light:hover {
-  background-color: #e2e6ea; /* Warna latar belakang saat hover (sedikit lebih gelap) */
-  border-color: #d6d6d6; /* Warna garis batas saat hover */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
-  transition: background-color 0.3s ease, border-color 0.3s ease,
-    box-shadow 0.3s ease; /* Transisi halus saat hover */
-}
 .bg-transparent {
   background: transparent;
 }
-.bg-primary {
-  background: #ec3236; /* Merah */
-}
-.bg-primary-secondary {
-  background-color: #9ed3d1; /* Biru kehijauan lembut */
-}
-.bg-primary-tertiary {
-  background-color: #e0f7fa; /* Biru muda */
-}
-.bg-primary-quaternary {
-  background-color: #ffedcc; /* Krem */
-}
-.bg-primary-quinary {
-  background-color: #ffe5e5; /* Merah muda lembut */
+
+.bg-light {
+  background: #f0f0f0; /* Merah muda pucat untuk kontras yang lembut dengan #ec3236 */
 }
 
+/* Warna Latar Belakang */
+.bg-primary {
+  background: #ec3236; /* Merah utama */
+}
+
+.bg-primary-secondary {
+  background-color: #ff6f61; /* Merah Peach */
+}
+
+.bg-primary-tertiary {
+  background-color: #ff8a80; /* Peach Lembut */
+}
+
+.bg-primary-quaternary {
+  background-color: #ff9a9e; /* Peach Gelap */
+}
+
+.bg-primary-quinary {
+  background-color: #ffb6b9; /* Pink Lembut */
+}
+
+/* Warna Latar Belakang Hover */
+.bg-primary:hover {
+  background: #c1272d; /* Merah Tua */
+}
+
+.bg-primary-secondary:hover {
+  background-color: #ff5f4f; /* Merah Peach lebih gelap */
+}
+
+.bg-primary-tertiary:hover {
+  background-color: #ff9a74; /* Peach Gelap */
+}
+
+.bg-primary-quaternary:hover {
+  background-color: #ff8a85; /* Peach Lebih Gelap */
+}
+
+.bg-primary-quinary:hover {
+  background-color: #ff9c9f; /* Pink Lebih Gelap */
+}
+
+/* Warna Teks */
 .text-primary {
-  color: #e2e6ea; /* Putih */
+  color: #ec3236; /* Merah utama */
+  white-space: nowrap;
+  font-weight: bolder;
+  background: linear-gradient(90deg, #ec3236 0%, #f76c6c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-primary-secondary {
-  color: #9ed3d1; /* Biru kehijauan lembut */
+  color: #ff6961; /* Merah Muda */
 }
 
 .text-primary-tertiary {
-  color: #ffedcc; /* Krem */
+  color: #ff9a9e; /* Pink Lembut */
 }
 
 .text-primary-quaternary {
-  color: #ffe5e5; /* Merah muda lembut */
+  color: #ffc1c1; /* Peach Muda */
 }
 
 .text-primary-quinary {
-  color: #ec3236; /* Merah */
+  color: #ffe5e5; /* Putih dengan semburat merah muda */
 }
 
+/* Warna Hover Teks */
 .text-primary:hover {
-  color: #ff9999; /* Merah muda cerah */
+  color: #c1272d; /* Merah Tua */
 }
 
 .text-primary-secondary:hover {
-  color: #00bcd4; /* Biru kehijauan lebih cerah */
+  color: #ff4d4f; /* Merah yang lebih gelap */
 }
 
 .text-primary-tertiary:hover {
-  color: #ffcc99; /* Krem lebih cerah */
+  color: #ff8586; /* Pink Lebih Gelap */
 }
 
 .text-primary-quaternary:hover {
-  color: #ff9999; /* Merah muda cerah */
+  color: #ff9999; /* Peach Lebih Gelap */
 }
 
 .text-primary-quinary:hover {
-  color: #ff0000; /* Merah terang */
+  color: #ffd7d7; /* Putih dengan semburat pink */
 }
 
 .padding-top-bottom-0 {
@@ -606,6 +628,10 @@ ins {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.padding-top-bot-small {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
 
 .no-padding {
   padding: 0;
@@ -614,9 +640,15 @@ ins {
 .padding-top-medium {
   padding-top: 90px;
 }
+.padding-top-small {
+  padding-top: 45px;
+}
 
 .padding-bottom-medium {
   padding-bottom: 90px;
+}
+.padding-bottom-small {
+  padding-bottom: 45px;
 }
 
 .no-padding-left {
@@ -855,6 +887,22 @@ a.text-white:hover {
 .text-right {
   text-align: right;
 }
+.text-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #ec3236 0%, #f76c6c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translateY(-50%);
+  transition: color 0.3s ease;
+  letter-spacing: 5px;
+}
+.text-center {
+  text-align: center;
+}
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -1000,8 +1048,8 @@ td {
 .btn-primary {
   background: linear-gradient(
     45deg,
-    #0097b2,
-    #00bcd4
+    #ec3236,
+    #ff6f6f
   ); /* Gradient untuk efek menarik */
   color: #fff; /* Teks putih */
   border: none; /* Tanpa border */
@@ -1010,13 +1058,12 @@ td {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek 3D */
   transition: all 0.3s ease; /* Transisi lebih halus */
 }
-
 .btn-primary:hover,
 .btn-primary:focus {
   background: linear-gradient(
     45deg,
-    #00bcd4,
-    #0097b2
+    #ff6f6f,
+    #ec3236
   ); /* Balik gradient saat hover */
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam saat hover */
   transform: translateY(-3px); /* Sedikit angkat tombol saat di-hover */
@@ -1431,6 +1478,15 @@ select.form-control {
   display: flex;
   position: relative;
   text-decoration: none;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+}
+.main-navigation ul li.current-menu-item > a,
+.main-navigation > ul > li.menu-item-has-children.current-menu-item > a:after {
+  color: #ffff;
 }
 .main-navigation ul li.current-menu-parent > a,
 .main-navigation
@@ -1459,8 +1515,8 @@ select.form-control {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  border-top: 2px solid #ffff;
+  background-color: #ffb6b6;
+  border-top: 2px solid #ffb6b6;
   -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.09);
   box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.09);
@@ -1509,7 +1565,7 @@ select.form-control {
 }
 .main-navigation ul ul li.current_page_item a {
   color: #ffff;
-  background-color: #b2dfdb;
+  background-color: #ff8c8c;
 }
 .main-navigation ul ul li.menu-item-has-children > a:after {
   display: inline-block;
@@ -1519,7 +1575,7 @@ select.form-control {
   width: 0;
   height: 0;
   content: "\f107";
-  color: #bdbebf;
+  color: #ff9c9f;
   font-family: "FontAwesome";
   font-weight: 900;
   margin-right: 15px;
@@ -1545,6 +1601,44 @@ select.form-control {
 }
 .mobile-header {
   display: none;
+}
+@media (max-width: 767px) {
+  /* Gaya Navigasi Mobile */
+  
+  /* Menyorot item menu yang sedang aktif dan saat di-hover */
+  .mobile-nav ul li.current-menu-parent > a, 
+  .mobile-nav ul li a:hover {
+    color: #fff;
+  }
+
+  /* Indikator panah untuk item menu yang memiliki sub-menu */
+  .mobile-nav > ul > li.menu-item-has-children > a:after {
+    display: inline-block;
+    margin: 0 15px 0 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  /* Gaya untuk item submenu */
+  .mobile-nav ul ul li.current_page_item a,
+  .mobile-nav ul ul li.menu-item-has-children > a:hover:after {
+    color: #fff;
+  }
+
+  /* Indikator panah untuk submenu yang memiliki anak */
+  .mobile-nav ul ul li.menu-item-has-children > a:after {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    font-family: 'FontAwesome';
+    font-weight: 900;
+    font-size: 13px;
+    transform: rotate(-90deg);
+    content: "\f107";
+    color: #fff;
+  }
 }
 /*--------------------------------------------------------------
 ## Nav 2
@@ -1680,7 +1774,7 @@ select.form-control {
 }
 
 .main-footer ul li a {
-  color: #0096b1;
+  color: #ec3236;
   font-size: 16px;
   font-weight: 500;
   display: flex;
@@ -1690,7 +1784,7 @@ select.form-control {
 
 .main-footer ul li a i {
   margin-right: 10px; /* Space between icon and text */
-  color: #0096b1; /* Icon color */
+  color: #ff6f61; /* Icon color */
   font-size: 18px; /* Icon size */
 }
 
@@ -1715,7 +1809,7 @@ select.form-control {
   margin: 0;
 }
 /*--------------------------------------------------------------
-## Blog
+## Cust
 --------------------------------------------------------------*/
 .entry-content {
   padding-top: 120px;
@@ -1766,6 +1860,12 @@ select.form-control {
 .entry-summary p {
   margin-bottom: 30px;
 }
+.entry-title {
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
 .inner-post .entry-footer .post-link {
   color: #707070;
   font-size: 16px;
@@ -1773,15 +1873,13 @@ select.form-control {
   font-weight: 500;
 }
 .inner-post .entry-footer .post-link:hover {
-  color: #ffff;
+  color: #ff8586;
+  text-decoration: none;
 }
 .inner-post .entry-footer .post-link i {
   font-size: 20px;
   margin-left: 10px;
   vertical-align: middle;
-}
-.inner-post .entry-footer .post-link:hover {
-  text-decoration: none;
 }
 .page-pagination {
   display: flex;
@@ -2122,9 +2220,6 @@ p .btn-submit {
 ## Contact Us
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
-  #contact {
-    display: none;
-  }
   .contact-item {
     display: flex;
     flex-direction: inline-block;
@@ -2214,11 +2309,6 @@ p .btn-submit {
 /*--------------------------------------------------------------
 ## FAQ
 --------------------------------------------------------------*/
-.faq-section {
-  background-color: #f9f9f9; /* Warna latar belakang section */
-  padding: 40px 0; /* Ruang atas dan bawah */
-}
-
 .faq-item {
   background-color: #ffffff; /* Warna latar belakang FAQ item */
   border: 1px solid #e0e0e0; /* Garis batas */
@@ -2239,7 +2329,7 @@ p .btn-submit {
 }
 
 .faq-header i {
-  color: #3f417e; /* Warna ikon */
+  color: #ec3236; /* Warna ikon */
 }
 
 .faq-header h3 {
@@ -2282,11 +2372,6 @@ p .btn-submit {
     text-transform: uppercase;
   }
 }
-.about-section {
-  padding: 60px 0;
-  background-color: #f7f7f7;
-}
-
 .about-section h3 {
   font-size: 25px;
   font-weight: 700;
@@ -2367,10 +2452,6 @@ p .btn-submit {
 /*--------------------------------------------------------------
 ## Visit
 --------------------------------------------------------------*/
-.visit-section {
-  padding: 60px 0;
-  background-color: #f7f7f7;
-}
 .visit-section p {
   font-size: 18px;
   line-height: 1.8;
@@ -2384,13 +2465,21 @@ p .btn-submit {
 }
 
 .visit-section ul li {
-  font-size: 25px;
+  font-size: 20px;
   color: #6c757d;
   margin-bottom: 10px;
 }
 
 .visit-section ul li strong {
-  color: #343a40;
+  color: #ec3236;
+}
+.visit-section ul li a {
+  color: #ec3236;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 .visit-section i {
   color: #ff2727;
@@ -2615,6 +2704,14 @@ div:last-child > .process .process-icon:after {
 /*--------------------------------------------------------------
 ## Service
 --------------------------------------------------------------*/
+.services-title {
+  text-align: center;
+  white-space: nowrap;
+  font-weight: bolder;
+  background: linear-gradient(90deg, #ec3236 0%, #f76c6c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* Container untuk slider layanan */
 .services-slider {
   display: flex;
@@ -2768,16 +2865,14 @@ div:last-child > .process .process-icon:after {
 .project-slider .next-nav {
   right: -45px;
 }
-.project-grid {
-  overflow: hidden;
-}
+
 #filters {
   padding-bottom: 15px;
   margin-bottom: 60px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ec3236;
 }
 #filters a {
-  color: #707070;
+  color: #ec3236;
   font-size: 16px;
   font-weight: 500;
   margin-right: 40px;
@@ -2894,8 +2989,8 @@ div:last-child > .process .process-icon:after {
   }
 
   .home-content .home-text h1,
-  h4 {
-    text-align: center;
+  h2 {
+    display: none;
   }
 
   .home-content .home-text p {
@@ -2931,6 +3026,10 @@ div:last-child > .process .process-icon:after {
     min-width: 150px;
     border-radius: 5%;
   }
+
+  .partner-slider {
+    text-align: center;
+  }
 }
 .home-content {
   position: relative;
@@ -2943,7 +3042,7 @@ div:last-child > .process .process-icon:after {
 }
 .home-content .home-text {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -2952,6 +3051,7 @@ div:last-child > .process .process-icon:after {
   font-size: 20px;
   font-weight: bolder;
   margin-bottom: 20px;
+  white-space: normal;
 }
 .slider .slider-content {
   position: absolute;
@@ -3273,17 +3373,6 @@ div:last-child > .process .process-icon:after {
     display: none;
   }
 
-  .card-body h4 {
-    font-size: 20px; /* Ukuran font untuk kata-kata tambahan */
-    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
-    margin-right: 10px; /* Jarak antara teks tambahan dan teks asli */
-    letter-spacing: 5px; /* Jarak antar huruf */
-    font-weight: bold; /* Menjadikan teks lebih tebal */
-    transform: translateY(
-      -50%
-    ); /* Menyesuaikan agar garis benar-benar di tengah */
-    transition: color 0.3s ease; /* Animasi untuk perubahan warna */
-  }
   #reservationForm label {
     text-align: center;
   }
@@ -3313,6 +3402,7 @@ div:last-child > .process .process-icon:after {
     border-radius: 0;
   }
 }
+
 .custom-card {
   border-radius: 15px;
   border: 1px solid #dee2e6;
@@ -3387,12 +3477,7 @@ div:last-child > .process .process-icon:after {
   border-color: #007bff;
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
 }
-.font-weight-bold {
-  font-weight: 700;
-  background: linear-gradient(90deg, #007bff 0%, #6c757d 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 /*--------------------------------------------------------------
 ## Typo
 --------------------------------------------------------------*/
@@ -3645,8 +3730,88 @@ input[type="checkbox"]:checked:after {
 /*--------------------------------------------------------------
 ## Gallery
 --------------------------------------------------------------*/
+@media (max-width: 576px) {
+  .card {
+    width: 100%; /* Card mengisi seluruh lebar container */
+    margin-bottom: 15px; /* Jarak vertikal antar card */
+    margin-right: 0; /* Menghilangkan margin horizontal */
+    margin-left: 0;
+  }
+  #filters {
+    text
+  }
+}
+@media (min-width: 576px) {
+  .card {
+    margin-right: 15px; /* Jarak horizontal antar card pada layar lebih lebar */
+    margin-left: 15px;
+  }
+}
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Jarak antar card */
+}
 .gallery-item {
   margin-bottom: 30px;
+}
+.card {
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 5px;
+}
+
+.card:hover {
+  transform: translateY(-5px););
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-bottom: 1px solid #ddd;
+  object-fit: cover;
+  height: 200px; /* Adjust height as needed */
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.card-body {
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.image-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.zoom-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #ec3236;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+  font-weight: bolder;
+}
+
+.image-link:hover .zoom-icon {
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -4156,7 +4321,6 @@ table .cart-subtotal {
   }
   .mobile-header {
     display: block;
-    background-color: #fff;
   }
   .logo-brand-mobile {
     max-width: 100px;
@@ -4274,7 +4438,7 @@ table .cart-subtotal {
     margin-top: 20px;
   }
   .mobile-header .mobile-nav .mobile-menu > li.menu-item-has-children .arrow {
-    color: #000;
+    color: #fff;
     position: absolute;
     display: block;
     right: 0;

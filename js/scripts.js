@@ -10,24 +10,6 @@
     }
   });
 
-  $(".return-customer a").on("click", function () {
-    $(this).toggleClass("active");
-    if ($(this).hasClass("active")) {
-      $(".checkout-login-form").stop(true, true).slideDown();
-    } else {
-      $(".checkout-login-form").stop(true, true).slideUp();
-    }
-  });
-
-  $(".have-coupon a").on("click", function () {
-    $(this).toggleClass("active");
-    if ($(this).hasClass("active")) {
-      $(".woocommerce-form-coupon").stop(true, true).slideDown();
-    } else {
-      $(".woocommerce-form-coupon").stop(true, true).slideUp();
-    }
-  });
-
   $(".mobile-menu li:has(ul)").prepend(
     '<span class="arrow"><i class="fa fa-plus"></i></span>'
   );
@@ -156,7 +138,6 @@
   });
 
   // Slider
-
   $(".slider").each(function () {
     var $show = $(this).data("show");
     var $arr = $(this).data("arrow");
@@ -235,7 +216,6 @@
   }
 
   //Services Slider
-
   $(".services-slider").each(function () {
     var $show = $(this).data("show");
     var $arr = $(this).data("arrow");
@@ -247,110 +227,6 @@
       slidesToScroll: 1,
       arrows: $arr,
       autoplay: true,
-      autoplaySpeed: 6000,
-      adaptiveHeight: true,
-      prevArrow:
-        '<button type="button" class="prev-nav"><i class="icon ion-ios-arrow-dropleft"></i></button>',
-      nextArrow:
-        '<button type="button" class="next-nav"><i class="icon ion-ios-arrow-dropright"></i></button>',
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: $m_show,
-            slidesToScroll: 1,
-            infinite: true,
-            arrows: $arr,
-            dots: $dots,
-          },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-          },
-        },
-      ],
-    });
-  });
-
-  //Testimonial Slider
-
-  $(".testi-slider").each(function () {
-    var $show = $(this).data("show");
-    var $arr = $(this).data("arrow");
-    var $dots = $(this).data("dots");
-    var $m_show = $show;
-    if ($show == 3) $m_show = $show - 1;
-    $(this).slick({
-      slidesToShow: $show,
-      slidesToScroll: 1,
-      arrows: $arr,
-      dots: $dots,
-      autoplay: true,
-      autoplaySpeed: 6000,
-      adaptiveHeight: true,
-      prevArrow:
-        '<button type="button" class="prev-nav"><i class="icon ion-ios-arrow-dropleft"></i></button>',
-      nextArrow:
-        '<button type="button" class="next-nav"><i class="icon ion-ios-arrow-dropright"></i></button>',
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: $m_show,
-            slidesToScroll: 1,
-            infinite: true,
-            arrows: $arr,
-            dots: $dots,
-          },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-          },
-        },
-      ],
-    });
-  });
-
-  $(".testi-slider-2").each(function () {
-    var $show = $(this).data("show");
-    var $arr = $(this).data("arrow");
-    var $dots = $(this).data("dots");
-    var $m_show = $show;
-    if ($show == 3) $m_show = $show - 1;
-    $(this).slick({
-      slidesToShow: $show,
-      slidesToScroll: 1,
-      arrows: $arr,
-      dots: $dots,
-      autoplay: false,
       autoplaySpeed: 6000,
       adaptiveHeight: true,
       prevArrow:
@@ -471,86 +347,7 @@
     });
   });
 
-  //Project Feature Slider
-
-  $(".project-feature-slider").each(function () {
-    var $show = $(this).data("show");
-    var $arr = $(this).data("arrow");
-    var $dots = !$arr;
-    var $m_show = $show;
-    if ($show == 3) $m_show = $show - 1;
-    $(this).slick({
-      slidesToShow: $show,
-      slidesToScroll: 1,
-      arrows: $arr,
-      autoplay: true,
-      autoplaySpeed: 6000,
-      adaptiveHeight: true,
-      prevArrow:
-        '<button type="button" class="prev-nav"><i class="icon ion-ios-arrow-dropleft"></i></button>',
-      nextArrow:
-        '<button type="button" class="next-nav"><i class="icon ion-ios-arrow-dropright"></i></button>',
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: $m_show,
-            slidesToScroll: 1,
-            infinite: true,
-            arrows: $arr,
-            dots: $dots,
-          },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-          },
-        },
-      ],
-    });
-  });
-
-  //Slick feature project
-  if ($(".slick-feature-project, .slick-feature-project-nav").length) {
-    $(".slick-feature-project").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-      fade: true,
-      prevArrow:
-        '<button type="button" class="prev-nav"><i class="icon ion-ios-arrow-dropleft"></i></button>',
-      nextArrow:
-        '<button type="button" class="next-nav"><i class="icon ion-ios-arrow-dropright"></i></button>',
-      asNavFor: ".slick-feature-project-nav",
-      autoplay: true,
-    });
-
-    $(".slick-feature-project-nav").slick({
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      asNavFor: ".slick-feature-project",
-      dots: false,
-      centerMode: false,
-      focusOnSelect: true,
-      useTransform: false,
-    });
-  }
-
   //Project Slider
-
   $(".gallery-slider").each(function () {
     var $show = $(this).data("show");
     var $arr = $(this).data("arrow");
@@ -600,48 +397,6 @@
       ],
     });
   });
-
-  //Slider product
-  if ($(".slider-product, .slider-product-nav").length) {
-    $(".slider-product").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: ".slider-product-nav",
-      autoplay: false,
-    });
-
-    $(".slider-product-nav").slick({
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      asNavFor: ".slider-product",
-      dots: false,
-      arrows: false,
-      centerMode: false,
-      focusOnSelect: true,
-      useTransform: false,
-    });
-  }
-  //Popup Video
-  var $video_play = $(".video-player a");
-  if ($video_play.length > 0) {
-    $video_play.magnificPopup({
-      type: "iframe",
-      removalDelay: 160,
-      preloader: true,
-      fixedContentPos: false,
-      callbacks: {
-        beforeOpen: function () {
-          this.st.image.markup = this.st.image.markup.replace(
-            "mfp-figure",
-            "mfp-figure mfp-with-anim"
-          );
-          this.st.mainClass = this.st.el.attr("data-effect");
-        },
-      },
-    });
-  }
 
   // Initialize popup as usual
   if ($(".image-link").length) {
